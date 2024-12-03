@@ -1,5 +1,7 @@
 package com.string_examples;
 
+import java.util.function.Predicate;
+
 public class MaxNumber {
     
     public static int MaxNumber(int[] arr){
