@@ -24,8 +24,10 @@ public class WriteTextIntoFile {
 			//Defining file name
 			Path fileName = Path.of(path);
 			
+			//writeString method using to write a text into file
 			Files.writeString(fileName, text);
 			
+			//readString method using to read a text from file
 			Files.readString(fileName);
 			
 		}
