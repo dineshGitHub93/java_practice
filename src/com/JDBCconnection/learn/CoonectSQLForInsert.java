@@ -22,7 +22,7 @@ public class CoonectSQLForInsert {
 		String userPassword = "tccs";
 
 		// Updated query syntax for modern databases
-		String query = "INSERT INTO user_dlt (id, name) VALUES (101, 'Kunja')";
+		String query = "INSERT INTO user_dlt (id, name) VALUES (103, 'Kunja_daddy')";
 
 		//JDBC Connection
 		try {
