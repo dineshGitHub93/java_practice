@@ -3,7 +3,9 @@ package com.apachePOI.learn;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -12,6 +14,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelBookSample {
 
@@ -19,42 +23,29 @@ public class ExcelBookSample {
 		// TODO Auto-generated method stub
 		
 		try {
-			FileInputStream file = new FileInputStream(new File("example.xlsx"));
-			Workbook wb = WorkbookFactory.create(file);
+			//Create a object for WorkBook Interface
+			XSSFWorkbook workbook = new XSSFWorkbook();
 			
-			//Get the sheet
-			Sheet sheet = wb.getSheetAt(0);
+			//Create a blank spread sheet by creating an object of 
+			//XSSF Sheet and also given name 
+			XSSFSheet sheet = workbook.createSheet("sample");
 			
-			//Iterate through rows and cells 
-			for(Row row : sheet) {
-				for(Cell cell : row) {
-					
-					switch (cell.getCellStyle()) {
-					
-					case STRING: 
-						System.out.println(cell.getStringCellValue()+ "\t");
-						break;
-					case NUMERIC:
-						  System.out.print(cell.getNumericCellValue() + "\t");
-                          break;
-                      case BOOLEAN:
-                          System.out.print(cell.getBooleanCellValue() + "\t");
-                          break;
-                      default:
-                          System.out.print("Unknown Cell Type\t");
-		
-					}
-				}
-				System.out.println();
-			}
+			String location = "E:\\java_practice-1\\sample.xlsx";
 			
-			wb.close();
-			file.close();
+			// place the output file in location
+			FileOutputStream outputFile = new FileOutputStream(location);
+						
+			//Write workbook
+			workbook.write(outputFile);
 			
-		} catch (FileNotFoundException e) {
+			 System.out.println("Workbook written successfully to " + location);
+			 
+			 workbook.close();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 
 	}
 
