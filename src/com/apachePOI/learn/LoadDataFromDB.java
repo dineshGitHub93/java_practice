@@ -44,7 +44,7 @@ public class LoadDataFromDB {
 		int rowID =2;
 		
 		while(rs.next()) {
-			
+			System.out.println(rowID);
 			row = sheet.createRow(rowID);
 			cell = row.createCell(1);
 			cell.setCellValue(rs.getString("name"));
@@ -52,6 +52,7 @@ public class LoadDataFromDB {
 			row = sheet.createRow(rowID);
 			cell = row.createCell(2);
 			cell.setCellValue(rs.getInt("age"));
+			
 			rowID++;
 		}
 		
