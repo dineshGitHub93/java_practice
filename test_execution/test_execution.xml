@@ -1,0 +1,7 @@
+<suite name = "Sample test Suite">
+   <test name = "Sample test">
+      <classes>
+         <class name = "SampleTest.java.SampleTest" />
+      </classes>
+   </test>
+</suite>

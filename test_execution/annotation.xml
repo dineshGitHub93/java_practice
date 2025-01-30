@@ -1,0 +1,7 @@
+<suite name="annotation_example">
+	<test name="Annotations">
+	<classes>
+		<class name="com.testng.learning.TestingAnnotation"/>
+	</classes>
+	</test>
+</suite>

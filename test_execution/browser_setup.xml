@@ -1,0 +1,7 @@
+<suite name="browserInvoke">
+	<test name="lanunch app">
+		<classes>
+			<class name= "com.selenium.learning.BrowserInvoke"/>
+		</classes>
+	</test>
+</suite>
