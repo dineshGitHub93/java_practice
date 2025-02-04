@@ -1,7 +1,12 @@
-<suite name = "Sample test Suite">
-   <test name = "Sample test">
+<suite name = "SampleTest">
+   <test name = "Sampletest1">
       <classes>
-         <class name = "SampleTest.java.SampleTest" />
+         <class name = "com.testng.learning.Test1" />
+      </classes>
+   </test>
+   <test name = "Sampletest2">
+      <classes>
+         <class name = "com.testng.learning.Test2" />
       </classes>
    </test>
 </suite>
