@@ -15,7 +15,7 @@ public class LoadDataFromExcelToDB {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String bookName = "EmployeeData.xlsx"; //Workbook name
+		String bookName = "E:\\Database\\customer.xlsx"; //Workbook name
 		String URL ="jdbc:mysql://localhost:3306/education"; // DB connect URL
 		String userName = "root"; //DB UserName
 		String userPassword = "tccs";//DB UserPassword
@@ -33,7 +33,7 @@ public class LoadDataFromExcelToDB {
 			Connection con = DriverManager.getConnection(URL, userName, userPassword);
 			
 			 // Prepare the SQL statement for inserting data
-			String queary = "INSERT INTO employee (emp_id,emp_name,designation) VALUE(?,?,?)";
+			String queary = "INSERT INTO employee (CustomerID,CustomerName,ContactName,Address,City,PostalCode,Country) VALUE(?,?,?,?,?,?,?)";
 			PreparedStatement pt = con.prepareStatement(queary);
 			
 			//Iterate through the rows of the Excel file
@@ -45,14 +45,20 @@ public class LoadDataFromExcelToDB {
                 }
                 
              // Get the cell values (assuming name is in column 0 and age is in column 1)
-               String emp_ID = row.getCell(0).getStringCellValue();
-               String emp_name = row.getCell(1).getStringCellValue();
-               String designation = row.getCell(2).getStringCellValue();
+               String CustomerName = row.getCell(2).getStringCellValue();
+               String ContactName = row.getCell(3).getStringCellValue();
+               String Address = row.getCell(4).getStringCellValue();
+               String City = row.getCell(5).getStringCellValue();
+               String PostalCode = row.getCell(6).getStringCellValue();
+               String Country = row.getCell(7).getStringCellValue();
                
                // Set the values in the PreparedStatement
-               pt.setString(1, emp_ID);
-               pt.setString(2, emp_name);
-               pt.setString(3, designation);
+               pt.setString(2, CustomerName);
+               pt.setString(3, ContactName);
+               pt.setString(4, Address);
+               pt.setString(5, City);
+               pt.setString(6, PostalCode);
+               pt.setString(7, Country);
                
                // Execute the SQL statement
                pt.executeUpdate();
