@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.learning.BrowserInvoke">
+      <class name="com.testng.learning.IgnoreTest">
         <methods>
-          <include name="setUp"/>
-          <include name="launchApplication"/>
+          <include name="testSolutionMessage"/>
+          <include name="testPrintMessage"/>
         </methods>
-      </class> <!-- com.selenium.learning.BrowserInvoke -->
+      </class> <!-- com.testng.learning.IgnoreTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

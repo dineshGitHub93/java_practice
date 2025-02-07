@@ -1,12 +1,15 @@
 <suite name = "SampleTest">
    <test name = "Sampletest1">
+      
+      <groups>
+      	<run>
+      		<inclde name = "functest"/>
+      	</run>
+      </groups>
+      
       <classes>
-         <class name = "com.testng.learning.Test1" />
+         <class name = "com.testng.learning.GroupTestExample" />
       </classes>
-   </test>
-   <test name = "Sampletest2">
-      <classes>
-         <class name = "com.testng.learning.Test2" />
-      </classes>
+      
    </test>
 </suite>
