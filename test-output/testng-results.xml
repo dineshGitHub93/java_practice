@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-07T22:10:08 IST" name="SampleTest" finished-at="2025-02-07T22:10:08 IST" duration-ms="87">
+  <suite started-at="2025-02-08T15:35:04 IST" name="SampleTest" finished-at="2025-02-08T15:35:04 IST" duration-ms="99">
     <groups>
       <group name="checkintest">
         <method signature="GroupTestExample.testPrintMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" name="testPrintMessage" class="com.testng.learning.GroupTestExample"/>
@@ -13,17 +13,17 @@
         <method signature="GroupTestExample.testingExitMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" name="testingExitMessage" class="com.testng.learning.GroupTestExample"/>
       </group> <!-- functest -->
     </groups>
-    <test started-at="2025-02-07T22:10:08 IST" name="Sampletest1" finished-at="2025-02-07T22:10:08 IST" duration-ms="87">
+    <test started-at="2025-02-08T15:35:04 IST" name="Sampletest1" finished-at="2025-02-08T15:35:04 IST" duration-ms="99">
       <class name="com.testng.learning.GroupTestExample">
-        <test-method signature="testPrintMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" started-at="2025-02-07T22:10:08 IST" name="testPrintMessage" finished-at="2025-02-07T22:10:08 IST" duration-ms="12" status="PASS">
+        <test-method signature="testPrintMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" started-at="2025-02-08T15:35:04 IST" name="testPrintMessage" finished-at="2025-02-08T15:35:04 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPrintMessage -->
-        <test-method signature="testSalutationMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" started-at="2025-02-07T22:10:08 IST" name="testSalutationMessage" finished-at="2025-02-07T22:10:08 IST" duration-ms="2" status="PASS">
+        <test-method signature="testSalutationMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" started-at="2025-02-08T15:35:04 IST" name="testSalutationMessage" finished-at="2025-02-08T15:35:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSalutationMessage -->
-        <test-method signature="testingExitMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" started-at="2025-02-07T22:10:08 IST" name="testingExitMessage" finished-at="2025-02-07T22:10:08 IST" duration-ms="2" status="PASS">
+        <test-method signature="testingExitMessage()[pri:0, instance:com.testng.learning.GroupTestExample@13e344d]" started-at="2025-02-08T15:35:04 IST" name="testingExitMessage" finished-at="2025-02-08T15:35:04 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testingExitMessage -->
