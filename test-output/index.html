@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SampleTest" class="navigator-link">
-              <span class="suite-name border-passed">SampleTest</span>
+              <span class="suite-name border-failed">SampleTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-SampleTest" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SampleTest" class="hide-methods failed suite-SampleTest"> (hide)</a> <!-- hide-methods failed suite-SampleTest -->
+                      <a href="#" panel-name="suite-SampleTest" class="show-methods failed suite-SampleTest"> (show)</a> <!-- show-methods failed suite-SampleTest -->
+                    </span>
+                    <div class="method-list-content failed suite-SampleTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleTest" title="com.testng.learning.DependencyTestUsingAnnotation" class="method navigator-link" hash-for-method="testSolutionMessage">testSolutionMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SampleTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,12 @@
                     <div class="method-list-content passed suite-SampleTest">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SampleTest" title="com.testng.learning.GroupTestExample" class="method navigator-link" hash-for-method="testPrintMessage">testPrintMessage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SampleTest" title="com.testng.learning.DependencyTestUsingAnnotation" class="method navigator-link" hash-for-method="iniEnvironement">iniEnvironement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SampleTest" title="com.testng.learning.GroupTestExample" class="method navigator-link" hash-for-method="testSalutationMessage">testSalutationMessage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SampleTest" title="com.testng.learning.GroupTestExample" class="method navigator-link" hash-for-method="testingExitMessage">testingExitMessage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SampleTest" title="com.testng.learning.DependencyTestUsingAnnotation" class="method navigator-link" hash-for-method="testPrintMessage">testPrintMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SampleTest -->
@@ -128,31 +137,44 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SampleTest" class="panel SampleTest">
+          <div class="suite-SampleTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testng.learning.DependencyTestUsingAnnotation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSolutionMessage">
+                  </a> <!-- testSolutionMessage -->
+                  <span class="method-name">testSolutionMessage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [tutorialspointKunja] but found [Hi!Kunja]
+	at com.testng.learning.DependencyTestUsingAnnotation.testSolutionMessage(DependencyTestUsingAnnotation.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleTest-class-failed -->
           <div class="suite-SampleTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testng.learning.GroupTestExample</span>
+              <span class="class-name">com.testng.learning.DependencyTestUsingAnnotation</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="iniEnvironement">
+                  </a> <!-- iniEnvironement -->
+                  <span class="method-name">iniEnvironement</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testPrintMessage">
                   </a> <!-- testPrintMessage -->
                   <span class="method-name">testPrintMessage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSalutationMessage">
-                  </a> <!-- testSalutationMessage -->
-                  <span class="method-name">testSalutationMessage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testingExitMessage">
-                  </a> <!-- testingExitMessage -->
-                  <span class="method-name">testingExitMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,7 +191,7 @@
 &lt;suite name=&quot;SampleTest&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Sampletest1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testng.learning.GroupTestExample&quot;/&gt;
+      &lt;class name=&quot;com.testng.learning.DependencyTestUsingAnnotation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Sampletest1 --&gt;
 &lt;/suite&gt; &lt;!-- SampleTest --&gt;
@@ -193,30 +215,6 @@
             <span class="header-content">Groups for SampleTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">checkintest</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">testPrintMessage</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testSalutationMessage</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">functest</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">testPrintMessage</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testingExitMessage</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-SampleTest" class="panel">
@@ -235,22 +233,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testPrintMessage')
-data.setCell(0, 2, 'com.testng.learning.GroupTestExample')
-data.setCell(0, 3, 14);
+data.setCell(0, 1, 'testSolutionMessage')
+data.setCell(0, 2, 'com.testng.learning.DependencyTestUsingAnnotation')
+data.setCell(0, 3, 22);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testingExitMessage')
-data.setCell(1, 2, 'com.testng.learning.GroupTestExample')
-data.setCell(1, 3, 2);
+data.setCell(1, 1, 'iniEnvironement')
+data.setCell(1, 2, 'com.testng.learning.DependencyTestUsingAnnotation')
+data.setCell(1, 3, 10);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSalutationMessage')
-data.setCell(2, 2, 'com.testng.learning.GroupTestExample')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'testPrintMessage')
+data.setCell(2, 2, 'com.testng.learning.DependencyTestUsingAnnotation')
+data.setCell(2, 3, 6);
 window.suiteTableData['SampleTest']= { tableData: data, tableDiv: 'times-div-SampleTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 ms</span>
+              <span class="suite-total-time">Total running time: 38 ms</span>
               <div id="times-div-SampleTest">
               </div> <!-- times-div-SampleTest -->
             </div> <!-- times-div -->
@@ -276,18 +274,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testng.learning.GroupTestExample</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testng.learning.DependencyTestUsingAnnotation</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testPrintMessage</span>
+                <span class="method-name">iniEnvironement</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testSalutationMessage</span>
-                <span class="method-start">26 ms</span>
+                <span class="method-name">testPrintMessage</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testingExitMessage</span>
-                <span class="method-start">30 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSolutionMessage</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

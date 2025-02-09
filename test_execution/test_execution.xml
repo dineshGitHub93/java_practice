@@ -1,14 +1,8 @@
 <suite name = "SampleTest">
    <test name = "Sampletest1">
-      
-      <groups>
-      	<run>
-      		<inclde name = "functest"/>
-      	</run>
-      </groups>
-      
+         
       <classes>
-         <class name = "com.testng.learning.GroupTestExample" />
+         <class name = "com.testng.learning.DependencyTestUsingAnnotation" />
       </classes>
       
    </test>
