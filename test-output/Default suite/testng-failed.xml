@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.learning.IgnoreTest">
+      <class name="com.learn.restAPI.HTTPRequestMethod">
         <methods>
-          <include name="testSolutionMessage"/>
-          <include name="testPrintMessage"/>
+          <include name="updateUser"/>
         </methods>
-      </class> <!-- com.testng.learning.IgnoreTest -->
+      </class> <!-- com.learn.restAPI.HTTPRequestMethod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
