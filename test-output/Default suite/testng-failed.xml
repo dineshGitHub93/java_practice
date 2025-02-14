@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learn.restAPI.HTTPRequestMethod">
+      <class name="com.learn.restAPI.CreatePostRequestBodyExternalJson">
         <methods>
-          <include name="updateUser"/>
+          <include name="testDeleteInfo"/>
         </methods>
-      </class> <!-- com.learn.restAPI.HTTPRequestMethod -->
+      </class> <!-- com.learn.restAPI.CreatePostRequestBodyExternalJson -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

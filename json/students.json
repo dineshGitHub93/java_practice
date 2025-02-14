@@ -1,0 +1,78 @@
+{
+  "students": [
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "location": "Los Angeles",
+      "phone": "987-654-3210",
+      "courses": [
+        "English",
+        "Biology",
+        "Art"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Mike Johnson",
+      "location": "Chicago",
+      "phone": "456-789-1234",
+      "courses": [
+        "Physics",
+        "Chemistry",
+        "Computer Science"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Emily Davis",
+      "location": "Houston",
+      "phone": "321-654-9870",
+      "courses": [
+        "Music",
+        "Drama",
+        "Philosophy"
+      ]
+    },
+    {
+      "id": "14d0",
+      "name": "Kunja",
+      "location": "India",
+      "phone_num": "123356",
+      "courses": [
+        "java",
+        "python"
+      ]
+    },
+    {
+      "id": 1,
+      "courses": [
+        "Math",
+        "Science",
+        "History"
+      ],
+      "phone": "123-456-7890",
+      "name": "John Doe",
+      "location": "New York"
+    },
+    {
+      "id": 5,
+      "courses": [
+        "java",
+        "python"
+      ],
+      "phone": "123356",
+      "name": "Kunjan",
+      "location": "India"
+    },
+    {
+      "id": 6,
+      "courses": [
+        "java",
+        "python"
+      ],
+      "phone": "123356",
+      "name": "Kunjan",
+      "location": "India"
+    }
+  ]
+}
