@@ -44,7 +44,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": "1",
       "courses": [
         "Math",
         "Science",
@@ -55,7 +55,7 @@
       "location": "New York"
     },
     {
-      "id": 5,
+      "id": "5",
       "courses": [
         "java",
         "python"
@@ -65,7 +65,7 @@
       "location": "India"
     },
     {
-      "id": 6,
+      "id": "6",
       "courses": [
         "java",
         "python"
@@ -73,6 +73,16 @@
       "phone": "123356",
       "name": "Kunjan",
       "location": "India"
+    },
+    {
+      "id": "9c03",
+      "name": "Gayathri",
+      "location": "Chennai",
+      "phone_num": "123654",
+      "courses": [
+        "java",
+        "python"
+      ]
     }
   ]
 }

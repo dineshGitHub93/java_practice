@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-14T23:06:17 IST" name="Default suite" finished-at="2025-02-14T23:06:20 IST" duration-ms="2861">
+  <suite started-at="2025-02-15T19:57:30 IST" name="Default suite" finished-at="2025-02-15T19:57:33 IST" duration-ms="2601">
     <groups>
     </groups>
-    <test started-at="2025-02-14T23:06:17 IST" name="Default test" finished-at="2025-02-14T23:06:20 IST" duration-ms="2861">
-      <class name="com.learn.restAPI.CreatePostRequestBodyExternalJson">
-        <test-method signature="testPostUsingExternalJSON()[pri:1, instance:com.learn.restAPI.CreatePostRequestBodyExternalJson@5149d738]" started-at="2025-02-14T23:06:17 IST" name="testPostUsingExternalJSON" finished-at="2025-02-14T23:06:20 IST" duration-ms="2739" status="PASS">
+    <test started-at="2025-02-15T19:57:30 IST" name="Default test" finished-at="2025-02-15T19:57:33 IST" duration-ms="2601">
+      <class name="com.learn.restAPI.LogsInAPIDemo">
+        <test-method signature="logsDemo()[pri:0, instance:com.learn.restAPI.LogsInAPIDemo@5149d738]" started-at="2025-02-15T19:57:30 IST" name="logsDemo" finished-at="2025-02-15T19:57:33 IST" duration-ms="2531" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPostUsingExternalJSON -->
-        <test-method signature="testDeleteInfo()[pri:2, instance:com.learn.restAPI.CreatePostRequestBodyExternalJson@5149d738]" started-at="2025-02-14T23:06:20 IST" name="testDeleteInfo" finished-at="2025-02-14T23:06:20 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteInfo -->
-      </class> <!-- com.learn.restAPI.CreatePostRequestBodyExternalJson -->
+        </test-method> <!-- logsDemo -->
+      </class> <!-- com.learn.restAPI.LogsInAPIDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
