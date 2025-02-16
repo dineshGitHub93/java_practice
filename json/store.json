@@ -1,0 +1,28 @@
+{
+  "book": [
+    {
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "price": 19.99,
+      "title": "Harry Potter and the Sorcerer's Stone"
+    },
+    {
+      "author": "George Orwell",
+      "category": "Dystopian",
+      "price": 14.99,
+      "title": "1984"
+    },
+    {
+      "author": "Michelle Obama",
+      "category": "Biography",
+      "price": 24.99,
+      "title": "Becoming"
+    },
+    {
+      "author": "A.P.J. Abdul Kalam",
+      "category": "Biography",
+      "price": 24.99,
+      "title": "Wings of Fire"
+    }
+  ]
+}

@@ -83,6 +83,16 @@
         "java",
         "python"
       ]
+    },
+    {
+      "id": "2fb1",
+      "name": "Dinesh",
+      "location": "Chennai",
+      "phone_num": "12654748",
+      "courses": [
+        "REST-API",
+        "Selenium"
+      ]
     }
   ]
 }
