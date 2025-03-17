@@ -1,7 +1,4 @@
 package com.selenium.learning;
-
-
-
 import java.net.URL;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -6,7 +6,7 @@ public class TestFireFox {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Browser browser = WebDriverFactory.createBrowser("firefox");
+		Browser browser = WebDriverFactory.createBrowser("Edge");
 		
 		WebDriver driver = browser.createWebDriver();
 		
@@ -17,6 +17,8 @@ public class TestFireFox {
 
         // Close the browser
         driver.quit();
+        
+        driver = browser.createRemoteWebDriver(null);
 	}
 
 }

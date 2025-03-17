@@ -7,6 +7,7 @@ public class WebDriverFactory {
 			case "FIREFOX" -> new FirefoxBrowser();
 		default -> throw new IllegalArgumentException("Unexpected value: " + browserType.toUpperCase());
 		};
+	
 	}
 
 }
