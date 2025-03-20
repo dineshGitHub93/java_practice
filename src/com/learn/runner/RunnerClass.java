@@ -7,15 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/com/learn/feature", 
-		glue="src/com/learn/stepdefinitions"
+		features = "src/resources/features", 
+		glue="stepdefinitions",
+		tags ="@Test"
 		)
-
 public class RunnerClass{
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
 
 }
