@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-20T22:11:47 IST" name="Suite1" finished-at="2025-03-20T22:11:47 IST" duration-ms="19">
+  <suite started-at="2025-03-24T20:20:28 IST" name="Default suite" finished-at="2025-03-24T20:20:28 IST" duration-ms="90">
     <groups>
     </groups>
-    <test started-at="2025-03-20T22:11:47 IST" name="test1" finished-at="2025-03-20T22:11:47 IST" duration-ms="19">
-    </test> <!-- test1 -->
-  </suite> <!-- Suite1 -->
+    <test started-at="2025-03-24T20:20:28 IST" name="Default test" finished-at="2025-03-24T20:20:28 IST" duration-ms="90">
+      <class name="com.testng.learning.InnvocaTestNG">
+        <test-method signature="samp1()[pri:0, instance:com.testng.learning.InnvocaTestNG@752325ad]" started-at="2025-03-24T20:20:28 IST" name="samp1" finished-at="2025-03-24T20:20:28 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- samp1 -->
+        <test-method signature="sample1()[pri:0, instance:com.testng.learning.InnvocaTestNG@752325ad]" started-at="2025-03-24T20:20:28 IST" name="sample1" finished-at="2025-03-24T20:20:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+        <test-method signature="sample1()[pri:0, instance:com.testng.learning.InnvocaTestNG@752325ad]" started-at="2025-03-24T20:20:28 IST" name="sample1" finished-at="2025-03-24T20:20:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+        <test-method signature="sample1()[pri:0, instance:com.testng.learning.InnvocaTestNG@752325ad]" started-at="2025-03-24T20:20:28 IST" name="sample1" finished-at="2025-03-24T20:20:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+        <test-method signature="sample1()[pri:0, instance:com.testng.learning.InnvocaTestNG@752325ad]" started-at="2025-03-24T20:20:28 IST" name="sample1" finished-at="2025-03-24T20:20:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+        <test-method signature="sample1()[pri:0, instance:com.testng.learning.InnvocaTestNG@752325ad]" started-at="2025-03-24T20:20:28 IST" name="sample1" finished-at="2025-03-24T20:20:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+      </class> <!-- com.testng.learning.InnvocaTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
