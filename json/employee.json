@@ -1,0 +1,87 @@
+{
+  "employees": [
+    {
+      "id": "505",
+      "name": "Robert Chen",
+      "title": "Chief Technology Officer",
+      "department": "Executive",
+      "base_salary": 180000,
+      "bonus_eligible": true,
+      "benefits": [
+        "Health Insurance",
+        "Stock Options",
+        "Company Car"
+      ],
+      "start_date": "2018-11-10"
+    },
+    {
+      "id": "506",
+      "name": "Sarah Williams",
+      "title": "Senior Software Engineer",
+      "department": "Engineering",
+      "base_salary": 135000,
+      "bonus_eligible": true,
+      "benefits": [
+        "Health Insurance",
+        "401(k) Matching",
+        "Remote Work"
+      ],
+      "start_date": "2019-07-22"
+    },
+    {
+      "id": "507",
+      "name": "David Miller",
+      "title": "HR Manager",
+      "department": "Human Resources",
+      "base_salary": 95000,
+      "bonus_eligible": false,
+      "benefits": [
+        "Health Insurance",
+        "Dental Coverage",
+        "Paid Time Off"
+      ],
+      "start_date": "2021-03-10"
+    },
+    {
+      "id": "508",
+      "name": "Lisa Thompson",
+      "title": "Marketing Intern",
+      "department": "Marketing",
+      "base_salary": 30000,
+      "bonus_eligible": false,
+      "benefits": [
+        "Flexible Hours",
+        "Training Program"
+      ],
+      "start_date": "2023-05-15"
+    },
+    {
+      "id": "510",
+      "name": "Emma Carter",
+      "title": "IT Support Specialist",
+      "department": "IT",
+      "base_salary": 65000,
+      "bonus_eligible": false,
+      "benefits": [
+        "Health Insurance",
+        "Tech Stipend"
+      ],
+      "start_date": "2022-09-12"
+    },
+    {
+      "id": "967f",
+      "name": "Kunja Dinesh",
+      "title": "DevOps Engineer",
+      "department": "IT_Engineering",
+      "base_salary": 155000,
+      "bonus_eligible": true,
+      "benefits": [
+        "Health Insurance",
+        "401(k) Matching",
+        "Remote Work",
+        "Car Access"
+      ],
+      "start_date": "2019-07-22"
+    }
+  ]
+}
