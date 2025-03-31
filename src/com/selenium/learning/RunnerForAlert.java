@@ -6,16 +6,33 @@ import org.testng.annotations.Test;
 public class RunnerForAlert extends Base{
 	
 	AlertPage alertPage;
+	String baseURL = "https://testpages.herokuapp.com/styled/alerts/alert-test.html";
+	
 	
 	@Test
-	public void runAlert() throws InterruptedException {
+	public void runAlertBox() throws InterruptedException {
+		test = extentReports.createTest("Test Alert Box");
+		driver.get(baseURL);
 		
 		alertPage = new AlertPage(driver);
 		alertPage.showAlertBox();
-		alertPage.showAlertBoxWithConfirmation(false);
-		alertPage.showAlertBoxWithPrompt(false, "Kunja");
-		
 	}
 	
+	@Test
+	public void testAlertWithConfirmation() throws InterruptedException {
+		 test = extentReports.createTest("Test Alert Box with Confirmation");
+		 driver.get(baseURL);
+		 
+		 alertPage = new AlertPage(driver);
+		 alertPage.showAlertBoxWithConfirmation(true);
+	}
 
+	@Test
+	public void testAlertWithPrompt() throws InterruptedException {
+		test = extentReports.createTest("Test Alert Box with Prompt");
+		driver.get(baseURL);
+		 
+		 alertPage = new AlertPage(driver);
+		 alertPage.showAlertBoxWithPrompt(true, "Kunja");
+	}
 }

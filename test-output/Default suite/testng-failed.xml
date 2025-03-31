@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.learning.RunnerForAlert">
+      <class name="com.selenium.learning.LoginWithParallelExecution">
         <methods>
           <include name="tearDown"/>
-          <include name="runAlert"/>
-          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="loginWithParallelTest"/>
         </methods>
-      </class> <!-- com.selenium.learning.RunnerForAlert -->
+      </class> <!-- com.selenium.learning.LoginWithParallelExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
