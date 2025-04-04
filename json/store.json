@@ -4,25 +4,78 @@
       "author": "J.K. Rowling",
       "category": "Fantasy",
       "price": 19.99,
-      "title": "Harry Potter and the Sorcerer's Stone"
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "id": "eedd"
     },
     {
       "author": "George Orwell",
       "category": "Dystopian",
       "price": 14.99,
-      "title": "1984"
+      "title": "1984",
+      "id": "ee18"
     },
     {
       "author": "Michelle Obama",
       "category": "Biography",
       "price": 24.99,
-      "title": "Becoming"
+      "title": "Becoming",
+      "id": "22f1"
     },
     {
       "author": "A.P.J. Abdul Kalam",
       "category": "Biography",
       "price": 24.99,
-      "title": "Wings of Fire"
+      "title": "Wings of Fire",
+      "id": "e8ac"
+    },
+    {
+      "id": 101,
+      "author": "Chimamanda Ngozi Adichie",
+      "category": "Literary Fiction",
+      "price": 18.5,
+      "title": "Half of a Yellow Sun"
+    },
+    {
+      "id": 102,
+      "author": "Neil deGrasse Tyson",
+      "category": "Science",
+      "price": 22.95,
+      "title": "Astrophysics for People in a Hurry"
+    },
+    {
+      "id": 103,
+      "author": "Isabel Allende",
+      "category": "Historical Fiction",
+      "price": 20,
+      "title": "The House of the Spirits"
+    },
+    {
+      "id": 104,
+      "author": "Yaa Gyasi",
+      "category": "Drama",
+      "price": 17.25,
+      "title": "Homegoing"
+    },
+    {
+      "id": 105,
+      "author": "Kazuo Ishiguro",
+      "category": "Dystopian",
+      "price": 19.8,
+      "title": "Never Let Me Go"
+    },
+    {
+      "id": 106,
+      "author": "Colson Whitehead",
+      "category": "Historical Fiction",
+      "price": 21.4,
+      "title": "The Underground Railroad"
+    },
+    {
+      "id": 107,
+      "author": "Malala Yousafzai",
+      "category": "Autobiography",
+      "price": 16.75,
+      "title": "I Am Malala"
     }
   ]
 }

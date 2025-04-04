@@ -82,6 +82,66 @@
         "Car Access"
       ],
       "start_date": "2019-07-22"
+    },
+    {
+      "id": "606",
+      "name": "Sarah Williams",
+      "title": "Senior Software Engineer",
+      "department": "Engineering",
+      "base_salary": 135000,
+      "bonus_eligible": true,
+      "benefits": [
+        "Health Insurance,401(k) Matching,Remote Work"
+      ],
+      "start_date": "2019-07-22"
+    },
+    {
+      "id": "607",
+      "name": "James Lee",
+      "title": "Software Engineer",
+      "department": "Engineering",
+      "base_salary": 110000,
+      "bonus_eligible": false,
+      "benefits": [
+        "Health Insurance,Stock Options,Gym Reimbursement"
+      ],
+      "start_date": "2020-03-15"
+    },
+    {
+      "id": "608",
+      "name": "Priya Patel",
+      "title": "QA Automation Engineer",
+      "department": "Quality Assurance",
+      "base_salary": 98000,
+      "bonus_eligible": true,
+      "benefits": [
+        "Health Insurance,401(k) Matching,Flexible Hours"
+      ],
+      "start_date": "2021-01-10"
+    },
+    {
+      "id": "609",
+      "name": "David Chen",
+      "title": "DevOps Engineer",
+      "department": "Operations",
+      "base_salary": 120000,
+      "bonus_eligible": true,
+      "benefits": [
+        "Remote Work,401(k) Matching,Paid Time Off"
+      ],
+      "start_date": "2018-11-01"
+    },
+    {
+      "id": "610",
+      "name": "Alicia Gomez",
+      "title": "Frontend Developer",
+      "department": "Product",
+      "base_salary": 105000,
+      "bonus_eligible": false,
+      "benefits": [
+        "Health Insurance,Remote Work,Parental Leave"
+      ],
+      "start_date": "2022-06-27"
     }
   ]
 }
