@@ -167,6 +167,21 @@
    <scope>test</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>easyexcel</artifactId>
+    <version>4.0.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.36</version>
+    <scope>provided</scope>
+</dependency>
+
  <!-- Groovy (Required for Rest Assured) -->
     <dependency>
         <groupId>org.codehaus.groovy</groupId>
