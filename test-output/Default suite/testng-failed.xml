@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.learning.LoginWithParallelExecution">
+      <class name="com.selenium.learning.NaukuriResumeUpdate">
         <methods>
+          <include name="getUpdateResume"/>
+          <include name="setupExtent"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="loginWithParallelTest"/>
+          <include name="flushReport"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.selenium.learning.LoginWithParallelExecution -->
+      </class> <!-- com.selenium.learning.NaukuriResumeUpdate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

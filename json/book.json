@@ -4,25 +4,169 @@
       "author": "J.K. Rowling",
       "category": "Fantasy",
       "price": 19.99,
-      "title": "Harry Potter and the Sorcerer's Stone"
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "id": "716f"
     },
     {
       "author": "George Orwell",
       "category": "Dystopian",
       "price": 14.99,
-      "title": "1984"
+      "title": "1984",
+      "id": "3c98"
     },
     {
       "author": "Michelle Obama",
       "category": "Biography",
       "price": 24.99,
-      "title": "Becoming"
+      "title": "Becoming",
+      "id": "711b"
     },
     {
       "author": "A.P.J. Abdul Kalam",
       "category": "Biography",
       "price": 24.99,
-      "title": "Wings of Fire"
+      "title": "Wings of Fire",
+      "id": "97af"
+    },
+    {
+      "id": 101,
+      "author": "Chimamanda Ngozi Adichie",
+      "category": "Literary Fiction",
+      "price": 18.5,
+      "title": "Half of a Yellow Sun"
+    },
+    {
+      "id": 102,
+      "author": "Neil deGrasse Tyson",
+      "category": "Science",
+      "price": 22.95,
+      "title": "Astrophysics for People in a Hurry"
+    },
+    {
+      "id": 103,
+      "author": "Isabel Allende",
+      "category": "Historical Fiction",
+      "price": 20,
+      "title": "The House of the Spirits"
+    },
+    {
+      "id": 104,
+      "author": "Yaa Gyasi",
+      "category": "Drama",
+      "price": 17.25,
+      "title": "Homegoing"
+    },
+    {
+      "id": 105,
+      "author": "Kazuo Ishiguro",
+      "category": "Dystopian",
+      "price": 19.8,
+      "title": "Never Let Me Go"
+    },
+    {
+      "id": 101,
+      "author": "Chimamanda Ngozi Adichie",
+      "category": "Literary Fiction",
+      "price": 18.5,
+      "title": "Half of a Yellow Sun"
+    },
+    {
+      "id": 102,
+      "author": "Neil deGrasse Tyson",
+      "category": "Science",
+      "price": 22.95,
+      "title": "Astrophysics for People in a Hurry"
+    },
+    {
+      "id": 103,
+      "author": "Isabel Allende",
+      "category": "Historical Fiction",
+      "price": 20,
+      "title": "The House of the Spirits"
+    },
+    {
+      "id": 104,
+      "author": "Yaa Gyasi",
+      "category": "Drama",
+      "price": 17.25,
+      "title": "Homegoing"
+    },
+    {
+      "id": 105,
+      "author": "Kazuo Ishiguro",
+      "category": "Dystopian",
+      "price": 19.8,
+      "title": "Never Let Me Go"
+    },
+    {
+      "id": 101,
+      "author": "Chimamanda Ngozi Adichie",
+      "category": "Literary Fiction",
+      "price": 18.5,
+      "title": "Half of a Yellow Sun"
+    },
+    {
+      "id": 102,
+      "author": "Neil deGrasse Tyson",
+      "category": "Science",
+      "price": 22.95,
+      "title": "Astrophysics for People in a Hurry"
+    },
+    {
+      "id": 103,
+      "author": "Isabel Allende",
+      "category": "Historical Fiction",
+      "price": 20,
+      "title": "The House of the Spirits"
+    },
+    {
+      "id": 104,
+      "author": "Yaa Gyasi",
+      "category": "Drama",
+      "price": 17.25,
+      "title": "Homegoing"
+    },
+    {
+      "id": 105,
+      "author": "Kazuo Ishiguro",
+      "category": "Dystopian",
+      "price": 19.8,
+      "title": "Never Let Me Go"
+    },
+    {
+      "id": 101,
+      "author": "Chimamanda Ngozi Adichie",
+      "category": "Literary Fiction",
+      "price": 18.5,
+      "title": "Half of a Yellow Sun"
+    },
+    {
+      "id": 102,
+      "author": "Neil deGrasse Tyson",
+      "category": "Science",
+      "price": 22.95,
+      "title": "Astrophysics for People in a Hurry"
+    },
+    {
+      "id": 103,
+      "author": "Isabel Allende",
+      "category": "Historical Fiction",
+      "price": 20,
+      "title": "The House of the Spirits"
+    },
+    {
+      "id": 104,
+      "author": "Yaa Gyasi",
+      "category": "Drama",
+      "price": 17.25,
+      "title": "Homegoing"
+    },
+    {
+      "id": 105,
+      "author": "Kazuo Ishiguro",
+      "category": "Dystopian",
+      "price": 19.8,
+      "title": "Never Let Me Go"
     }
   ]
 }
