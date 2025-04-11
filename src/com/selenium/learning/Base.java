@@ -46,29 +46,28 @@ public class Base {
 	public void setup() {
 		ChromeOptions options = new ChromeOptions();
 	    options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT); // Always accept alerts
-
-	    
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 	}
 	
 	@AfterMethod
-	public void tearDown(ITestResult result	) throws InterruptedException {
+	public void tearDown(ITestResult result	){
 		
 		String screenshotPath = captureScreenshot(result.getName());
 		
-		if(result.getStatus() == ITestResult.FAILURE) {
-			test.fail("Test Failed: "+result.getThrowable().getMessage(),
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-		}
-		else if(result.getStatus()== ITestResult.SUCCESS) {	
-			test.pass("Test Passed"+
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-		}
-		else {
-			test.skip("Test Skipped");
-		}
-		Thread.sleep(2000);
+		switch(result.getStatus()) {
+	    case ITestResult.FAILURE:
+	        test.fail("Test Failed: " + result.getThrowable().getMessage(),
+	            MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+	        break;
+	    case ITestResult.SUCCESS:
+	        test.pass("Test Passed",
+	            MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+	        break;
+	    case ITestResult.SKIP:
+	        test.skip("Test Skipped");
+	        break;
+	}
 		if(driver !=null) 
 		{
 			driver.quit();
@@ -81,6 +80,10 @@ public class Base {
 		extentReports.flush();
 	}
 	public static String  captureScreenshot(String testName) {
+		  if (driver == null) {
+		        System.out.println("Driver is null. Cannot take screenshot.");
+		        return null;
+		    }
 		 try {
 			 File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		        
