@@ -54,7 +54,7 @@ public class AlertPage {
 		
 		Assert.assertEquals("I am an alert box!", alertText, "Alert text matched");
 		
-		String screenshotPath = Base.captureScreenshot("AlertBox");
+		String screenshotPath = Base.captureScreenshot(this.driver, "AlertBox");
 		Base.test.pass("Alert box validated successfully", 
 				MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 		
@@ -72,7 +72,7 @@ public class AlertPage {
 		if(clickAction) {
 			switchToAlertBox.accept();
 			Assert.assertEquals(confirmationText.getText(), "You clicked OK, confirm returned "+clickAction+".", "display a TRUE confirm dialog when clicked");
-			String screenshotPath = Base.captureScreenshot("ConfirmationOK");
+			String screenshotPath = Base.captureScreenshot(this.driver, "ConfirmationOK");
 			Base.test.pass("Confirmation dialog validated successfully", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 		
 		}else {
@@ -94,7 +94,7 @@ public class AlertPage {
 			switchToAlertBox.sendKeys(text);
 			switchToAlertBox.accept();
 			Assert.assertEquals(promptText.getText(), "You clicked OK. 'prompt' returned "+text, "display a TRUE confirm dialog when clicked");
-			String screenshotPath = Base.captureScreenshot("PromptOK");
+			String screenshotPath = Base.captureScreenshot(this.driver, "PromptOK");
 			Base.test.pass("Prompt dialog validated successfully", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 		}else {
 			Thread.sleep(2000);

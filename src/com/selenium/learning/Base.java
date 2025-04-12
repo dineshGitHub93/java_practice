@@ -25,87 +25,75 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 
 public class Base {
-	
+
 	protected static WebDriver driver;
 	protected static ExtentReports extentReports;
 	protected static ExtentTest test;
 	private String reportPath;
-	
+
 	@BeforeSuite
 	public void setupExtent() {
 		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 		reportPath = "reports/ExtentReport_"+timestamp+".html";
-		
+
 		ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(spark);
 	}
-	
+
 
 	@BeforeMethod
 	public void setup() {
 		ChromeOptions options = new ChromeOptions();
-	    options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT); // Always accept alerts
+		options.setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT); // Always accept alerts
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 	}
-	
+
 	@AfterMethod
-	public void tearDown(ITestResult result	){
+	public void tearDown(ITestResult result){
+
+	
 		
-		String screenshotPath = captureScreenshot(result.getName());
+		String screenshotPath = captureScreenshot(driver, result.getName());
 		
-		switch(result.getStatus()) {
-	    case ITestResult.FAILURE:
-	        test.fail("Test Failed: " + result.getThrowable().getMessage(),
-	            MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-	        break;
-	    case ITestResult.SUCCESS:
-	        test.pass("Test Passed",
-	            MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-	        break;
-	    case ITestResult.SKIP:
-	        test.skip("Test Skipped");
-	        break;
-	}
-		if(driver !=null) 
+		if (result.getStatus() == ITestResult.FAILURE) {
+	         // your screenshot logic here
+
+	        if (screenshotPath != null && !screenshotPath.trim().isEmpty()) {
+	            test.fail("Test Failed: " + result.getThrowable(),
+	                MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+	        } else {
+	            test.fail("Test Failed: " + result.getThrowable());
+	            test.warning("Screenshot not available or path was null.");
+	        }
+	    } else if (result.getStatus() == ITestResult.SUCCESS) {
+	    	test.pass("Test Passed",
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+	    }
+
+	    // flush extent
+		extentReports.flush();
+	    
+	    if(driver !=null) 
 		{
 			driver.quit();
 		}
 	}
-	
-	@AfterSuite
-	public void flushReport() 
-	{
-		extentReports.flush();
-	}
-	public static String  captureScreenshot(String testName) {
-		  if (driver == null) {
-		        System.out.println("Driver is null. Cannot take screenshot.");
-		        return null;
-		    }
+
+	public static String  captureScreenshot(WebDriver driver, String testName) {
+		
 		 try {
-			 File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		        
-		        // Create a folder for screenshots if it doesn't exist
-		        File screenshotDir = new File(System.getProperty("user.dir") + "/reports/screenshots");
-		        if (!screenshotDir.exists()) {
-		            screenshotDir.mkdirs();
-		        }
-
-		        // Generate timestamped filename
+		        TakesScreenshot ts = (TakesScreenshot) driver;
+		        File source = ts.getScreenshotAs(OutputType.FILE);
 		        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		        String screenshotPath = screenshotDir + "/" + testName + "_" + timestamp + ".png";
-
-		        // Save the file
-		        File dest = new File(screenshotPath);
-		        FileUtils.copyFile(src, dest);
-		        
-		        return screenshotPath;
-		 }
-		 catch (Exception e) {
-			e.printStackTrace();
-			return null;
+		        String path = System.getProperty("user.dir") + "/screenshots/"+testName + "_"+timestamp +".png";
+		        File destination = new File(path);
+		        FileUtils.copyFile(source, destination);
+		        return path;
+		    } catch (Exception e) {
+		        e.printStackTrace();
+		        return null; // very important to return null on failure
+		    }
 	}
-}
 }
