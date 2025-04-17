@@ -34,11 +34,12 @@ public class Base {
 	@BeforeSuite
 	public void setupExtent() {
 		String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-		reportPath = "reports/ExtentReport_"+timestamp+".html";
+		reportPath = "./reports/ExtentReport_"+timestamp+".html";
 
 		ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 		extentReports = new ExtentReports();
 		extentReports.attachReporter(spark);
+		test = extentReports.createTest("Test");
 	}
 
 
@@ -52,11 +53,9 @@ public class Base {
 
 	@AfterMethod
 	public void tearDown(ITestResult result){
-
-	
-		
 		String screenshotPath = captureScreenshot(driver, result.getName());
 		
+		if (test != null) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 	         // your screenshot logic here
 
@@ -72,13 +71,19 @@ public class Base {
 					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 	    }
 
-	    // flush extent
-		extentReports.flush();
-	    
-	    if(driver !=null) 
+		 } else {
+		        System.out.println("ExtentTest object is null. Skipping Extent Report logging.");
+		    }
+		
+
+		if(driver !=null) 
 		{
 			driver.quit();
 		}
+	    // flush extent
+		extentReports.flush();
+	    
+	    
 	}
 
 	public static String  captureScreenshot(WebDriver driver, String testName) {
