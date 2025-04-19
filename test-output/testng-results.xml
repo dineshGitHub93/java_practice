@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-17T20:38:48 IST" name="Default suite" finished-at="2025-04-17T20:38:58 IST" duration-ms="10020">
+  <suite started-at="2025-04-19T19:13:33 IST" name="Default suite" finished-at="2025-04-19T19:13:38 IST" duration-ms="5314">
     <groups>
     </groups>
-    <test started-at="2025-04-17T20:38:48 IST" name="Default test" finished-at="2025-04-17T20:38:58 IST" duration-ms="10020">
-      <class name="com.selenium.learning.CheckBrokenLink">
-        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.selenium.learning.CheckBrokenLink@38e79ae3]" started-at="2025-04-17T20:38:47 IST" name="setupExtent" finished-at="2025-04-17T20:38:48 IST" duration-ms="387" status="PASS">
+    <test started-at="2025-04-19T19:13:33 IST" name="Default test" finished-at="2025-04-19T19:13:38 IST" duration-ms="5314">
+      <class name="com.learn.locator.GetInfoWebTable">
+        <test-method is-config="true" signature="setupExtent()[pri:0, instance:com.learn.locator.GetInfoWebTable@1dac5ef]" started-at="2025-04-19T19:13:32 IST" name="setupExtent" finished-at="2025-04-19T19:13:33 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtent -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.learning.CheckBrokenLink@38e79ae3]" started-at="2025-04-17T20:38:48 IST" name="setup" finished-at="2025-04-17T20:38:51 IST" duration-ms="3087" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.learn.locator.GetInfoWebTable@1dac5ef]" started-at="2025-04-19T19:13:33 IST" name="setup" finished-at="2025-04-19T19:13:35 IST" duration-ms="1797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBrokenLinksFromPage()[pri:0, instance:com.selenium.learning.CheckBrokenLink@38e79ae3]" started-at="2025-04-17T20:38:51 IST" name="testBrokenLinksFromPage" finished-at="2025-04-17T20:38:57 IST" duration-ms="5645" status="PASS">
+        <test-method signature="testHandleDynamicWebTable()[pri:0, instance:com.learn.locator.GetInfoWebTable@1dac5ef]" started-at="2025-04-19T19:13:35 IST" name="testHandleDynamicWebTable" finished-at="2025-04-19T19:13:37 IST" duration-ms="2545" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBrokenLinksFromPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.selenium.learning.CheckBrokenLink@38e79ae3]" started-at="2025-04-17T20:38:57 IST" name="tearDown" finished-at="2025-04-17T20:38:58 IST" duration-ms="1217" status="PASS">
+        </test-method> <!-- testHandleDynamicWebTable -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.learn.locator.GetInfoWebTable@1dac5ef]" started-at="2025-04-19T19:13:37 IST" name="tearDown" finished-at="2025-04-19T19:13:38 IST" duration-ms="913" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testBrokenLinksFromPage status=SUCCESS method=CheckBrokenLink.testBrokenLinksFromPage()[pri:0, instance:com.selenium.learning.CheckBrokenLink@38e79ae3] output={null}]]]>
+                <![CDATA[[TestResult name=testHandleDynamicWebTable status=SUCCESS method=GetInfoWebTable.testHandleDynamicWebTable()[pri:0, instance:com.learn.locator.GetInfoWebTable@1dac5ef] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.selenium.learning.CheckBrokenLink -->
+      </class> <!-- com.learn.locator.GetInfoWebTable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

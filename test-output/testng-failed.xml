@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learn.restAPI.ValidateSchema">
+      <class name="com.learn.locator.GetInfoWebTable">
         <methods>
-          <include name="testCreateUser"/>
+          <include name="testHandleDynamicWebTable"/>
+          <include name="setupExtent"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.learn.restAPI.ValidateSchema -->
+      </class> <!-- com.learn.locator.GetInfoWebTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
