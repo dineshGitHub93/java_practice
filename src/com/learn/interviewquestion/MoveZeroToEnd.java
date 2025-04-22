@@ -23,18 +23,16 @@ public class MoveZeroToEnd {
 	public static void moveZerosToEndWithJava8(int[] num) {
 		System.out.println("Before: "+Arrays.toString(num));
 		
-		int[] result = IntStream.concat(
-				Arrays.stream(num).filter(i->i!=0), 
-				Arrays.stream(num).filter(i->i==0)
+		int[] result = IntStream.concat( //Joins both filtered streams.
+				Arrays.stream(num).filter(i->i!=0), // Filters non-zero numbers.
+				Arrays.stream(num).filter(i->i==0) //Filters only the zeros.
 				).toArray();
+		System.out.println("After: " + Arrays.toString(result));
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-
 		int[] num = {0,1,0,3,12};
-
-
+		moveZerosToEndWithJava7(num);
+		moveZerosToEndWithJava8(num);
 	}
 
 }
