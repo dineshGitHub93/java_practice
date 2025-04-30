@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-25T20:39:50 IST" name="Default suite" finished-at="2025-04-25T20:39:50 IST" duration-ms="168">
+  <suite started-at="2025-04-30T22:20:30 IST" name="Default suite" finished-at="2025-04-30T22:20:32 IST" duration-ms="2051">
     <groups>
     </groups>
-    <test started-at="2025-04-25T20:39:50 IST" name="Default test" finished-at="2025-04-25T20:39:50 IST" duration-ms="168">
-      <class name="com.learn.read_data.ReadDataUsingGSON">
-        <test-method signature="testReadDataFromJSON(com.learn.read_data.Login)[pri:0, instance:com.learn.read_data.ReadDataUsingGSON@bccb269]" started-at="2025-04-25T20:39:50 IST" name="testReadDataFromJSON" data-provider="getDataFromJsonUsingGSON" finished-at="2025-04-25T20:39:50 IST" duration-ms="10" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login(username=user1, password=pass1, expected=success)]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-04-30T22:20:30 IST" name="Default test" finished-at="2025-04-30T22:20:32 IST" duration-ms="2051">
+      <class name="com.learn.rest_assured.UpdateEmployee">
+        <test-method signature="updateEmployeeTest()[pri:0, instance:com.learn.rest_assured.UpdateEmployee@5e5d171f]" started-at="2025-04-30T22:20:30 IST" name="updateEmployeeTest" finished-at="2025-04-30T22:20:32 IST" duration-ms="1983" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testReadDataFromJSON -->
-        <test-method signature="testReadDataFromJSON(com.learn.read_data.Login)[pri:0, instance:com.learn.read_data.ReadDataUsingGSON@bccb269]" started-at="2025-04-25T20:39:50 IST" name="testReadDataFromJSON" data-provider="getDataFromJsonUsingGSON" finished-at="2025-04-25T20:39:50 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login(username=user2, password=wrongpass, expected=failure)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testReadDataFromJSON -->
-      </class> <!-- com.learn.read_data.ReadDataUsingGSON -->
+        </test-method> <!-- updateEmployeeTest -->
+      </class> <!-- com.learn.rest_assured.UpdateEmployee -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
