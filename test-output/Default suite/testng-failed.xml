@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learn.locator.GetInfoWebTable">
+      <class name="com.learn.rest_assured.GetUsingBddChain">
         <methods>
-          <include name="testHandleDynamicWebTable"/>
-          <include name="setupExtent"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="testDeleteResourceUsingChain"/>
         </methods>
-      </class> <!-- com.learn.locator.GetInfoWebTable -->
+      </class> <!-- com.learn.rest_assured.GetUsingBddChain -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
