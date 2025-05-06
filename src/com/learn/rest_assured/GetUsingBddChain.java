@@ -70,7 +70,7 @@ public class GetUsingBddChain {
 		
 		RestAssured.given()
 		.baseUri("http://localhost:3000/")
-	.when()
+		.when()
 		.delete("employees/f572")
 		.prettyPrint();
 	}

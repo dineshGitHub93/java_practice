@@ -1,6 +1,6 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('employee.json')
+const router = jsonServer.router('student.json')
 const middlewares = jsonServer.defaults()
 
 // API Key Validation Middleware
